@@ -1,0 +1,20 @@
+<body>
+<table>
+  <tr >
+    <th>id</th>
+    <th>name</th>
+    <th>username</th>
+    <th>email</th>
+    <th>phone</th>
+    <th>website</th>
+  </tr>
+  <tr *ngFor="let userValue of userService">
+    <td>{{userValue.id}}</td>
+    <td><a href="#" (click)="clickUser()">{{userValue.name}}</a></td>
+    <td>{{userValue.username}}</td>
+    <td>{{userValue.email}}</td>
+    <td>{{userValue.phone}}</td>
+    <td>{{userValue.website}}</td>
+  </tr>
+</table>
+</body>
